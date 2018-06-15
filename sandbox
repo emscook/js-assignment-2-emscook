@@ -1,0 +1,7 @@
+const app = (a, b) => a + b
+const surround = a => b => c => a + c + b
+
+surroundStart = surround("(")
+surroundEnd = surroundStart(")")
+totalMessage = surroundEnd("a")
+console.log(totalMessage)
